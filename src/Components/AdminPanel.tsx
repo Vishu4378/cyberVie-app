@@ -29,7 +29,7 @@ function AdminPanel() {
             <>
               <p className="font-semibold text-gray-200">{name}</p>
               <a
-                href={"http://localhost:5000/" + item}
+                href={"https://cybervie.onrender.com/" + item}
                 className="text-gray-400"
               >
                 check documents
