@@ -15,13 +15,11 @@ function AdminPanel() {
       <div className="grid grid-cols-2 gap-10 bg-gray-800 rounded p-8 ">
         <p className="font-semibold text-gray-200">Name</p>
         <p className="font-semibold text-gray-200">Document</p>
-        {User.length == 0 ? (
+        {User.length == 0 && (
           <div className="text-white text-sm items-center">
             No user exist please add Documents
           </div>
-        ) : (
-          <div></div>
-        )}
+      ) }
         {User.map((item, i) => {
           const name = item.split("^^^")[0];
 
